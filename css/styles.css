@@ -15,7 +15,7 @@
   --color-drop-shadow: #553e4e;
   --color-btn: #9ebc9e;
   --color-btn-font: #553e4e;
-  --color-btn-hover: #ffafc5;
+  --color-btn-hover: #ffcfd2;
 
   --font-family: "Titan One", sans-serif;
   --font-family-secondary: "Montserrat", sans-serif;
@@ -51,6 +51,7 @@ input[type="text"] {
   width: 50%;
   margin: 15px 0px;
   padding: 8px;
+  font-family: var(--font-family);
 }
 
 /* BOUTON */

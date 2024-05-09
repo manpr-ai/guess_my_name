@@ -18,12 +18,15 @@ const guessMyName = () => {
   if (!isValidString(guessName)) {
     result.textContent =
       "Vous devez saisir uniquement des caractères alphabétiques !";
+    guessInput.style.border = "1.5px solid red";
     return;
   }
 
   if (guessName !== myName.toLowerCase()) {
     result.textContent = "Non, le nom est incorrect !";
   } else {
+    guessInput.style.border = "1.5px solid #9ebc9e";
+
     result.textContent = `Bravo, vous avez trouvé mon nom en ${totalAttempts} tentatives.`;
     gameEnded = true;
     guessButton.removeEventListener("click", guessMyName); // Supprime l'écouteur d'événement sur le bouton
