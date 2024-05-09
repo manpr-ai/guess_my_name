@@ -1,50 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-background-body: #ffcfd2;
+  --color-h1: #9ebc9e;
+  --color-font: #553e4e;
+  --color-border: #553e4e;
+  --color-background-container: #ffffff;
+  --color-drop-shadow: #553e4e;
+  --color-btn: #9ebc9e;
+  --color-btn-font: #553e4e;
+  --color-btn-hover: #ffafc5;
+
+  --font-family: "Titan One", sans-serif;
+  --font-family-secondary: "Montserrat", sans-serif;
+}
+
+/* BODY */
 body {
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: pink;
+  font-family: var(--font-family);
+  background-color: var(--color-background-body);
 }
 
-.container__game {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 600px;
-  padding: 30px;
-  border: 1px solid #ffffff;
-  border-radius: 15px;
-  margin-top: -40px;
-  background-color: #fff;
-}
-h1 {
+/* HEADER */
+.header__container {
   font-size: 37px;
-}
-h2 {
-  font-size: 25px;
-}
-input[type="text"] {
-  width: 100%;
-  margin: 10px 0px;
-  padding: 8px;
-  box-sizing: border-box;
-  border: 1px solid #000000;
-  border-radius: 15px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  color: var(--color-h1);
 }
 
+/* CONTAINER MAIN */
+.container__game {
+  justify-content: center;
+  max-width: 700px;
+  padding: 25px;
+  background-color: var(--color-background-container);
+  color: var(--color-font);
+}
+
+/* INPUT */
+input[type="text"] {
+  width: 50%;
+  margin: 15px 0px;
+  padding: 8px;
+}
+
+/* BOUTON */
 button {
   padding: 10px 20px;
-  background-color: pink;
-  color: #fff;
-  border: none;
-  border-radius: 15px;
+  background-color: var(--color-btn);
+  color: var(--color-btn-font);
   cursor: pointer;
   font-size: 16px;
+  font-family: var(--font-family-);
 }
 
 button:hover {
-  background-color: palevioletred;
+  background-color: var(--color-btn-hover);
+}
+
+/* PADDING */
+.padB__10 {
+  padding-bottom: 10px;
+}
+.padB__5 {
+  padding-bottom: 5px;
+}
+.padT__15 {
+  padding-top: 15px;
+}
+
+/* BORDER */
+.border__style {
+  border: 1.5px solid var(--color-border);
+}
+.border__radius {
+  border-radius: 15px;
+}
+
+/* FONT */
+.font__size__h2 {
+  font-size: 25px;
+}
+
+/* DROP SHADOX */
+.drop__shadow {
+  filter: drop-shadow(3px 3px 3px var(--color-drop-shadow));
+}
+
+/* LAYOUT */
+.d__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

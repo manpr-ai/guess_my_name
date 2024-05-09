@@ -6,21 +6,36 @@
     <title>Guess My Name</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <div class="container__game">
-      <h1>Guess My Name</h1>
-      <h2>Règles :</h2>
-      <p>
-        1. Devinez mon nom (accents autorisés)<br />
-        2. Si votre supposition est incorrecte, vous pourrez deviner à nouveau.
-        <br />3. Le jeu continue jusqu'à ce que vous deviniez le bon nom.
-      </p>
-      <label for="guessInput">Entrez un nom :</label>
-      <input type="text" id="guessInput" />
-      <button id="guessButton">Devinez !</button>
-      <p id="result"></p>
-    </div>
-
+  <body class="d__flex">
+    <header class="header__container">
+      <h1 class="drop__shadow">Guess My Name</h1>
+    </header>
+    <main>
+      <div class="d__flex container__game drop__shadow border__radius">
+        <h2 class="padB__10 font__size__h2">Règles :</h2>
+        <div class="padB__10">
+          <p class="padB__5">1. Devinez mon nom (accents autorisés).</p>
+          <p class="padB__5">
+            2. Si votre supposition est incorrecte, vous pourrez deviner à
+            nouveau.
+          </p>
+          <p class="padB__5">
+            3. Le jeu continue jusqu'à ce que vous deviniez le bon nom.
+          </p>
+        </div>
+        <label for="guessInput">Entrez un nom :</label>
+        <input
+          class="border__style border__radius"
+          type="text"
+          id="guessInput"
+        />
+        <button class="border__style border__radius" id="guessButton">
+          Devinez !
+        </button>
+        <p class="padT__15" id="result"></p>
+      </div>
+    </main>
+    <footer></footer>
     <script src="./js/script.js"></script>
   </body>
 </html>
